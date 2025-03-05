@@ -3,62 +3,29 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu site</title>
+    <title>Player</title>
     <style>
-      body {
+      body, html {
         margin: 0;
         padding: 0;
-        font-family: Arial, sans-serif;
-      }
-      .main-container {
+        height: 100%;
         display: flex;
-        flex-direction: column;
-        align-items: center;
         justify-content: center;
-        height: 100vh;
-        background-image: url('https://images.unsplash.com/photo-1576201836106-db1758fd1c97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTF8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80');
-        background-size: cover;
-        background-position: center;
+        align-items: center;
+        background-color: #000; /* Cor de fundo para o player se destacar */
       }
-      h1 {
-        font-family: Arial, sans-serif;
-        color: #f52c40;
-        margin-bottom: 20px;
-        text-align: center;
-      }
-      p {
-        font-family: Arial, sans-serif;
-        color: #fff;
-        text-align: center;
-      }
+
       iframe {
         border: none;
-        margin-top: 20px;
-      }
-      @media (max-width: 768px) {
-        .main-container {
-          background-position: top;
-          text-align: center;
-        }
-        h1 {
-          font-size: 2rem;
-        }
-        p {
-          font-size: 1.2rem;
-        }
-        iframe {
-          width: 100%;
-          height: auto;
-        }
+        width: 100%;
+        height: 100%;
+        max-width: 800px; /* Limita a largura máxima */
+        max-height: 450px; /* Limita a altura máxima */
       }
     </style>
   </head>
   <body>
-    <div class="main-container">
-      <h1>Oi gata linda beijos</h1>
-      <p>Abner Lindo Ramos</p>
-      <!-- Player -->
-      <iframe name="Player" src="//%72%65%64%65%63%61%6E%61%69%73%74%76%2E%70%73/player3/ch.php?canal=bobonordeste" frameborder="0" height="400" width="640" scrolling="no" allow="encrypted-media" allowfullscreen></iframe>
-    </div>
+    <!-- Player -->
+    <iframe name="Player" src="//%72%65%64%65%63%61%6E%61%69%73%74%76%2E%70%73/player3/ch.php?canal=bobonordeste" allow="encrypted-media" allowfullscreen></iframe>
   </body>
 </html>
